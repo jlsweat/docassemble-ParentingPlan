@@ -1,0 +1,867 @@
+---
+metadata:
+  title:  |
+    Parenting Plan - New York - Courtesy of Oeser-Sweat, PC
+  short title: |
+    New York Parenting Plan Courtesy of Oeser-Sweat, PC
+  description: |
+    This Interview produces a New York Parenting Plan without Signature functionality
+  authors:
+    - name: Jamel Oeser-Sweat
+      organization: Oeser-Sweat, P.C.
+  revision_date: July 24, 2020
+---
+field: ready_to_proceed
+question: |
+  Welcome to the Law Offices of Oeser-Sweat, P.C. Automated NY Parenting Plan Generator.
+subquestion: |
+  Press continue to get started.
+  By continuing, you agree that nothing herein is meant to create an attorney client relationship.
+  
+  About us: 
+  
+  [Oeser-Sweat, P.C.](https://www.oesersweat.com) 
+  
+  99 Madison Avenue, 5th Floor, New York, New York 10016 
+  
+  Email: Jamel at oesersweat.com Tel: 212-675-7955 
+  
+  You can also get free divorce information on our [uncontesteddivorce.info](https://www.uncontesteddivorce.info) site!
+
+video: |
+  [YOUTUBE ZrOfUfYgYlo]
+under: |
+  LEGAL NOTICE: 
+  THIS APP MAY BE CONSIDERED ADVERTISING IN SOME JURISDICTIONS UNDER THE APPLICABLE LAW AND ETHICAL RULES. 
+  
+  OESER-SWEAT, P.C. DOES NOT OFFER ANY GUARANTEE OF CASE RESULTS. 
+  
+  PRIOR RESULTS DO NOT GUARANTEE A SIMILAR OUTCOME. 
+  
+  ATTORNEY ADVERTISING
+mandatory: True  
+---
+question: |
+ What Court is this Case being filed in? Otherwise, where will it be filed?
+subquestion: |
+ If the case is not yet filed, where will it be filed?
+ 
+ Pick One. If you are not married, the answer is probably "FAMILY COURT" but if you are married and will be filing for a divorce or you are already in a divorce proceeding, the answer is probably "SUPREME COURT" and you should probably pick that.
+fields: 
+  -Court: court
+  input type: radio
+  choices: 
+   - SUPREME COURT
+   - FAMILY COURT
+mandatory: True
+---
+question: |
+ If there is a future or pending divorce in Supreme Court, the Parties are called Plaintiff and Defendant. If the matter will be in Family Court, the Parties will be called Petitioner and Respondent.
+fields: 
+  -Petitioner or Plaintiff: plaintiffpetitioner
+  input type: radio
+  choices: 
+   - Plaintiff
+   - Petitioner
+mandatory: True
+---
+question: |
+ Should we call the other party a Defendant or Respondent?
+subquestion: |
+ If there is a future or pending divorce in Supreme Court, the Parties are called Plaintiff and Defendant. If the matter will be in Family Court, the Parties will be called Petitioner and Respondent.
+fields:
+   -Defendant or Respondent: defendantrespondent
+   input type: radio
+   choices:
+    - Defendant
+    - Respondent
+mandatory: True
+---
+question: |
+ What are the Names of the Parents
+subquestion: |
+ If there is a Court case or there is going to be one filed, list the person bringing the action first. Please use legal names.
+fields: 
+    - Parent 1: plaintiff
+    - Parent 2: defendant
+    - number of children: numberofchildren
+      datatype: range
+      min: 1
+      max: 7
+    - Index or Docket Number if a case has already been filed: indexno
+      required: False
+mandatory: True
+---
+question: |
+ Who is proposing that this be the parenting plan?
+subquestion: |
+ The person bringing the case is usually referred to as the Plaintiff.  The party that is served and responds to the initial papers is usually called the Defendant. Based on your current responses, ${ plaintiff } is Plaintiff and ${ defendant } is the Defendant.
+fields: 
+  -options: proposedby
+  input type: radio
+  choices: 
+    - Proposed by Plaintiff.
+    - Proposed by Defendant.
+    - Proposed by both parties by mutual agreement
+  
+mandatory: True
+---
+question: |
+ Please provide information about the children of ${ plaintiff } and ${ defendant }
+subquestion: |
+ Please provide the full legal names of the children as well as their dates of birth and genders. We have provided fields for up to seven children.
+fields: 
+  - note: Child 1
+  - Child 1 Name: child1name
+  - Child 1 Date of Birth: child1dob
+    datatype: date
+  - Child 1 Gender: child1gender
+    code: |
+      {'male': 'Male', 'female': 'Female', 'other': 'Other'}
+  - note: Child 2
+  - Child 2 Name: child2name
+    required: false
+  - Child 2 Date of Birth: child2dob
+    datatype: date
+    required: false
+  - Child 2 Gender: child2gender
+    code: |
+      {'male': 'Male', 'female': 'Female', 'other': 'Other'}
+    required: false
+  - note: Child 3
+  - Child 3 Name: child3name
+    required: false
+  - Child 3 Date of Birth: child3dob
+    datatype: date
+    required: false
+  - Child 3 Gender: child3gender
+    code: |
+      {'male': 'Male', 'female': 'Female', 'other': 'Other'}
+    required: false
+  - note: Child 4
+  - Child 4 Name: child4name
+    required: false
+  - Child 4 Date of Birth: child4dob
+    datatype: date
+    required: false
+  - Child 4 Gender: child4gender
+    code: |
+      {'male': 'Male', 'female': 'Female', 'other': 'Other'}
+    required: false
+  - note: Child 5
+  - Child 5 Name: child5name
+    required: false
+  - Child 5 Date of Birth: child5dob
+    datatype: date
+    required: false
+  - Child 5 Gender: child5gender
+    code: |
+      {'male': 'Male', 'female': 'Female', 'other': 'Other'}
+    required: false
+  - note: Child 6
+  - Child 6 Name: child6name
+    required: false
+  - Child 6 Date of Birth: child6dob
+    datatype: date
+    required: false
+  - Child 6 Gender: child6gender
+    code: |
+      {'male': 'Male', 'female': 'Female', 'other': 'Other'}
+    required: false
+  - note: Child 7
+  - Child 7 Name: child7name
+    required: false
+  - Child 7 Date of Birth: child7dob
+    datatype: date
+    required: false
+  - Child 7 Gender: child7gender
+    code: |
+      {'male': 'Male', 'female': 'Female', 'other': 'Other'}
+    required: false
+
+mandatory: True
+---
+question: |
+ Parenting Time Schedule: When will the children be with ${ plaintiff } and when will the children be with ${ defendant } ?
+subquestion: |
+ Please list the days of the week and times that the children will be with each parent. This question deals with the Weekday and Weekend schedule. Another question will deal with the Summer Schedule.
+fields: 
+    - The children will be with ${ plaintiff } as follows: plaintiffschedule
+      input type: area
+    - The children will be with ${ defendant } as follows: defendantschedule
+      input type: area
+mandatory: True
+---
+question: |
+  Summer Schedule
+subquestion: |
+   Please select the appropriate pull down and explain the circumstances surrounding the parenting schedule in the summer. The Summer schedule will be in Section 2.2 of the Plan. Section 2.1 will be the regular weekday and weekend schedule.
+fields:
+  - Choose One: summerscheduleexception
+    choices:
+    - The schedule described above in Section 2.1 will continue throughout the summer except that
+    - The schedule for time with our children will be different during the summer than it is in the winter.
+    - There will be no exception to the schedule described above in Section 2.1 for the summer months.
+mandatory: True
+---
+question: |
+  Summer Schedule
+subquestion: |
+   Please explain the circumstances surrounding the parenting schedule in the summer. Please be as detailed as possible.
+fields: 
+  - Explaination: summerscheduleexplaination
+    input type: area
+mandatory: True
+---
+question: |
+  Holiday Schedule
+subquestion: |
+   Please explain the circumstances surrounding the parenting schedule during the Holidays. The plan will state:
+
+fields:
+  - note: The following holiday schedule will take  priority over the regular  weekday, weekend, and  summer schedules discussed above.  If a holiday is not specified as even, odd or every year with one  parent, then our children will remain  with the parent they are normally scheduled to be with. Choose one or Both.
+  - Holiday Schedule Logistics: alternateweekends
+    choices:
+    - When parents are using an alternating weekend plan and the holiday schedule would result in one parent having the children for three weekends in a row, the alternating weekend pattern will restart, so neither parent will go without having the children for more than two weekends in a row
+    - When parents are using an alternating weekend plan and the holiday schedule would result in one parent having the children for three weekends in a row, the alternating weekend pattern will NOT restart, even if a parent will go without having the children for more than two weekends in a row
+  - Weekends with Holidays: weekendswithholidays
+    choices:
+    - If a parent has our children on a weekend with an unspecified holiday or nonschool day attached, they shall have our children for the holiday or nonschool day
+    - If a parent has our children on a weekend with an unspecified holiday or nonschool day attached, they shall NOT have our children for the holiday or nonschool day
+mandatory: True
+---
+question: |
+  Holiday Schedule - Mother's Day
+subquestion: |
+   Indicate which Parent the children will be for the following holidays. Provide beginning and ending times.
+fields:
+  - Mother's Day Even Years: mothersdayeven
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Mother's Day Odd Years: mothersdayodd
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Mother's Day Every Year: mothersdayevery
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - Mother's Day beginning and end times: mothersdaytimes
+mandatory: True
+---
+question: |
+  Holiday Schedule - Father's Day
+subquestion: |
+   Indicate which Parent the children will be for the following holidays. Provide beginning and ending times.
+fields:
+  - Father's Day Even Years: fathersdayeven
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Father's Day Odd Years: fathersdayodd
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Father's Day Every Year: fathersdayevery
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - Father's Day beginning and end times: fathersdaytimes
+mandatory: True
+---
+question: |
+  Holiday Schedule - Thanksgiving
+subquestion: |
+   Indicate which Parent the children will be for the following holidays. Provide beginning and ending times.
+fields:
+  - Thanksgiving Even Years: thankseven
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Thanksgiving Odd Years: thanksodd
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Thanksgiving Every Year: thanksevery
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - Thanksgiving beginning and end times: thankstimes
+  - Details for sharing time with the child[ren] during the Thanksgiving holiday are: thanksdetails
+    input type: area
+    required: False
+ 
+mandatory: True
+---
+question: |
+  Holiday Schedule - Christmas Eve
+subquestion: |
+   Indicate which Parent the children will be for the following holidays. Provide beginning and ending times.
+fields:
+  - Christmas Eve Even Years: christmaseveeven
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Christmas Eve Odd Years: christmaseveodd
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Christmas Eve Every Year: christmaseveevery
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - Christmas Eve beginning and end times: christmasevetimes
+mandatory: True
+---
+question: |
+  Holiday Schedule - Christmas
+subquestion: |
+   Indicate which Parent the children will be for the following holidays. Provide beginning and ending times.
+fields:
+  - Christmas Even Years: christmaseven
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Christmas Odd Years: christmasodd
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Christmas Every Year: christmasevery
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - Christmas beginning and end times: christmastimes
+mandatory: True
+---
+question: |
+  Holiday Schedule - New Year's Eve
+subquestion: |
+   Indicate which Parent the children will be for the following holidays. Provide beginning and ending times.
+fields:
+  - New Year's Eve Even Years: nyeveeven
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - New Year's Eve Odd Years: nyevesodd
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - New Year's Eve Every Year: nyeveevery
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - New Year's Eve beginning and end times: nyevetimes
+mandatory: True
+---
+question: |
+  Holiday Schedule - New Year's
+subquestion: |
+   Indicate which Parent the children will be for the following holidays. Provide beginning and ending times.
+fields:
+  - New Year's Even Years: nyeven
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - New Year's Odd Years: nyodd
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - New Year's Every Year: nyevery
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - New Year's beginning and end times: nytimes
+mandatory: True
+---
+question: |
+  Holiday Schedule - MLK Day
+subquestion: |
+   Indicate which Parent the children will be for the following holidays. Provide beginning and ending times.
+fields:
+  - MLK Day Even Years: mlkeven
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - MLK Day Odd Years: mlkodd
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - MLK Day Every Year: mlkevery
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - MLK Day beginning and end times: mlktimes
+mandatory: True
+---
+question: |
+  Holiday Schedule - President’s Day
+subquestion: |
+   Indicate which Parent the children will be for the following holidays. Provide beginning and ending times.
+fields:
+  - President’s Day Even Years: preseven
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - President’s Day Odd Years: presodd
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - President’s Day Every Year: presevery
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - President’s Day beginning and end times: prestimes
+mandatory: True
+---
+question: |
+  Holiday Schedule - Easter
+subquestion: |
+   Indicate which Parent the children will be for the following holidays. Provide beginning and ending times.
+fields:
+  - Easter Even Years: eastereven
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Easter Odd Years: easterodd
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Easter Every Year: easterevery
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - Easter beginning and end times: eastertimes
+mandatory: True
+---
+question: |
+  Holiday Schedule - Memorial Day
+subquestion: |
+   Indicate which Parent the children will be for the following holidays. Provide beginning and ending times.
+fields:
+  - Memorial Day Even Years: memeven
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Memorial Day Odd Years: memodd
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Memorial Day Every Year: memevery
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - Memorial Day beginning and end times: memtimes
+mandatory: True
+---
+question: |
+  Holiday Schedule - Juneteenth
+subquestion: |
+   Indicate which Parent the children will be for the following holidays. Provide beginning and ending times. For more information on Juneteenth in New York State, please see https://www.governor.ny.gov/news/no-204-declaring-juneteenth-holiday-new-york-state-employees
+fields:
+  - Juneteenth Even Years: juneeven
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Juneteenth Odd Years: juneodd
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Juneteenth Every Year: juneevery
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - Juneteenth beginning and end times: junetimes
+mandatory: True
+---
+question: |
+  Holiday Schedule - Fourth of July
+subquestion: |
+   Indicate which Parent the children will be for the following holidays. Provide beginning and ending times.
+fields:
+  - Fourth of July Even Years: foureven
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Fourth of July Odd Years: fourodd
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Fourth of July Every Year: fourevery
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - Fourth of July beginning and end times: fourtimes
+mandatory: True
+---
+question: |
+  Holiday Schedule - Labor Day
+subquestion: |
+   Indicate which Parent the children will be for the following holidays. Provide beginning and ending times.
+fields:
+  - Labor Day Even Years: laboreven
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Labor Day Odd Years: laborodd
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Labor Day Every Year: laborevery
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - Labor Day beginning and end times: labortimes
+mandatory: True
+---
+question: |
+  Holiday Schedule - Halloween
+subquestion: |
+   Indicate which Parent the children will be for the following holidays. Provide beginning and ending times. Keep in mind there may be parties and some kids go "Trick or Treating" on that day.
+fields:
+  - Halloween Even Years: weeneven
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Halloween Odd Years: weenodd
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Halloween Every Year: weenevery
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - Halloween beginning and end times: weentimes
+mandatory: True
+---
+question: |
+  Holiday Schedule - Veteran's Day
+subquestion: |
+   Indicate which Parent the children will be for the following holidays. Provide beginning and ending times.
+fields:
+  - Veteran's Day Even Years: veteven
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Veteran's Day Odd Years: vetodd
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Veteran's Day Every Year: vetevery
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - Veteran's Day beginning and end times: vettimes
+mandatory: True
+---
+question: |
+  Holiday Schedule - Other Holidays & Occasions
+subquestion: |
+   Some families have other holidays and occasions upon which it may be important for the parties to plan in advance who may spend time with the children.  One example might be a Parent's birthday.  Here you can schedule up to three such other holidays. Provide beginning and ending times.
+fields:
+  - note: First Event or Occasion
+  - Other Event 1 Name: other1
+    required: False
+  - Other Event 1 Even Years: other1even
+    required: False
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Other Event 1 Odd Years: other1odd
+    required: False
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Other Event 1 Every Year: other1every
+    required: False
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - Other Event 1 beginning and end times: other1times
+    required: False
+  - note: Second Event or Occasion
+  - Other Event 2 Name: other2
+    required: False
+  - Other Event 2 Even Years: other2even
+    required: False
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Other Event 2 Odd Years: other2odd
+    required: False
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Other Event 2 Every Year: other2every
+    required: False
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - Other Event 2 beginning and end times: other2times
+    required: False
+  - note: Third Event or Occasion
+  - Other Event 3 Name: other3
+    required: False
+  - Other Event 3 Even Years: other3even
+    required: False
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Other Event 3 Odd Years: other3odd
+    required: False
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+  - Other Event 3 Every Year: other3every
+    required: False
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+    - As stated
+  - Other Event 3 beginning and end times: other3times
+    required: False
+mandatory: True
+---
+question: |
+  Winter Break - Christmas, New Year’s, and School Vacation
+subquestion: |
+   Please select the appropriate choice and explain the circumstances surrounding the parenting schedule during the Winter Break. The Summer schedule will be in Section 2.2 of the Plan. Section 2.1 will be the regular weekday and weekend schedule. Winter Break is Section 2.5 of the Plan.
+fields:
+  - Choose One: winterbreakplans
+    choices:
+    - Our children will be in the care of each parent according to the schedule described in Section 2.1.
+    - Our children will spend half of Winter Break with each parent on a schedule that is consistent with the alternating holidays described above.
+    - Other-Details for sharing time with the child[ren] during Christmas Eve, Christmas Day, New Year’s Eve and  New Year’s Day and school vacation are
+  - Details: winterbreakdetails
+    input type: area
+mandatory: True
+---
+question: |
+  Spring Break
+subquestion: |
+   Please select the appropriate choice and explain the circumstances surrounding the parenting schedule during the Spring Break. The Summer schedule will be in Section 2.2 of the Plan. Section 2.1 will be the regular weekday and weekend schedule. Winter Break is Section 2.5 of the Plan. Spring Break will be in Section 2.6 of the Plan.
+fields:
+  - Choose One: springbreakplans
+    choices:
+    - Our children will be in the care of each parent according to the schedule described in Section 2.1.
+    - Our children will alternate spending spring break with each parent as follows
+    - Our children will spend half of spring break with each parent
+  - note: You can put information regarding the details of how the children will spend spring break. For instance, they may alternate spending spring break with ${ plaintiff } during even years and spending spring break with ${ defendant } during odd years.
+  - Details: springbreakdetails
+    input type: area
+    required: false
+mandatory: True
+---
+question: |
+  Children's Birthdays
+subquestion: |
+   Please select the appropriate choice and explain the circumstances surrounding the parenting schedule during the Spring Break. The Summer schedule will be in Section 2.2 of the Plan. Section 2.1 will be the regular weekday and weekend schedule. Winter Break is Section 2.5 of the Plan. Spring Break will be in Section 2.6 of the Plan.
+fields:
+  - Choose One: birthdayplans
+    choices:
+    - Our children will be in the care of each parent according to the schedule described in Section 2.1 and Section 2.2.
+    - Our children’s birthdays will be planned so that both parents participate in the birthday celebration.
+    - Our children will celebrate birthdays according to the following plan   
+  - note: indicate which parent has the children, and any other important details.
+  - Details: birthdaydetails
+    input type: area
+    required: false
+mandatory: True
+---
+question: |
+ Other Holidays and Vacations.	What are the details for sharing time with the children during other holidays or vacation?
+subquestion: |
+ If you want to mention anything about those special occasions you added, you should do so here. This is the area where you talk about other vacations that you have not dealt with already.
+fields: 
+    - Details about Other Holidays and Vacations: vacationplans
+      input type: area
+      required: False
+mandatory: True
+---
+question: |
+ Number of Overnights.
+subquestion: |
+ Some people like to spell out the specific number of overnights which will take place with each parent. This section is included for that reason but is not required.
+fields: 
+    - Number of Overnights with ${ plaintiff }: overnights1
+      datatype: number
+      required: False
+    - Number of Overnights with ${ defendant }: overnights2
+      datatype: number
+      required: False
+mandatory: True
+---
+question: |
+ Primary Residence - Optional.
+subquestion: |
+ Some people like to spell out what household will be the Primary Residence of the children. This section is included for that reason but is not required.
+fields: 
+   - We agree that our child[ren] shall primarily reside with: primaryparent
+     choices:
+     - ${ plaintiff }
+     - ${ defendant }
+     - both parents and we agree that neither residence shall be considered the “primary” residence.
+     required: False
+mandatory: True
+---
+question: |
+ Alternate Care - Optional.
+subquestion: |
+ If your child has needs with respect to Alternate Care, this is where you will describe your plans to ensure that those needs are met. This section is included for that reason but is not required.
+fields: 
+ - Alternate Care Plans: alternatecare
+   choices:
+   - We choose not to specify arrangements for alternate care.
+   - Our arrangements for alternate care are
+   required: False
+ - Alternate Care Details: alternatecaredetails
+   required: False
+mandatory: True
+---
+question: |
+ Temporary  Changes to the Schedule
+subquestion: |
+ Any schedule for sharing time with the children may be changed as long as both parents agree to the changes ahead of time
+fields: 
+ - How should ${ plaintiff } & ${ defendant } agree to temporary changes to the schedule for sharing time with the children: temporarychanges
+   choices:
+   - In writing
+   - verbally
+mandatory: True
+---
+question: |
+ Makeup and Missed Parenting Time 
+subquestion: |
+ Only substantial medical  reasons will be considered sufficient for postponement of parenting time.  If a child is ill and  unable to spend time with a parent, a makeup parenting time will be scheduled.  If a parent fails to have  the children during their scheduled parenting time for any other reason, there  will be no makeup of parenting time unless the parties agree otherwise
+
+fields: 
+ - How should ${ plaintiff } & ${ defendant } agree to Makeup and Missed Parenting Time with the children: makeup
+   choices:
+   - In writing
+   - verbally
+under: |
+  Note: This applies to Temporary Changes. As to Permanent Changes to the Schedule, it is important to understand that, once  the judge signs  the final judgment in our case and approves this Parenting Plan, any changes that you do not agree on can be made only by applying to the court and proving that there has been a “change in circumstance.” Before  applying to the court, you can agree to try to resolve your dispute through  mediation or other  means.
+mandatory: True
+---
+question: |
+ Decision Making 
+subquestion: |
+ Day-to-Day Decisions. 
+ Each parent will make day-to-day decisions regarding the care  and control of the children during the time they are caring for the children. This includes any emergency decisions affecting the health or safety of the children.
+ Major Decisions.
+ Major decisions include, but are not limited to, decisions about the children’s education, non-emergency healthcare, religious training, and extracurricular activities, including summer camp and the need for tutoring.
+
+fields:
+ -  note: Sole vs. Joint Custody
+ - What have the parties decided as to Custody: custodialparent
+   choices:
+   - ${ plaintiff } shall have  sole decision-making authority on major decisions about our children.  This arrangement is known by the courts as Sole Custody,
+   - ${ defendant } shall have  sole decision-making authority on major decisions about our children.  This arrangement is known by the courts as Sole Custody,
+   - Both parents will share in the responsibility for making major decisions about our children.  This arrangement is known by the courts as Joint Custody.
+ -  note: As to consultation on major decisions
+ -  Person making Major Decision: decisionmaker
+    choices:
+    - ${ plaintiff }
+    - ${ defendant }
+ -  Requirement to consult other party: decisionfaq
+    input type: radio
+    choices:
+    - shall always  consult  with the other parent prior to making major decisions.
+    - shall have  the option to consult with the other parent prior to making  major decisions.
+    - will handle major decisions as follows
+ -  Describe how will the parent making major decisions will handle making the decisions or dividing responsibility for making them: majordecisiondetails
+    input type: area
+    required: False
+under: |
+  Note: Other  - - Describe how major decisions will be handled; including dividing the responsibility for major decisions between the parents according to each parent’s strengths/weaknesses:
+mandatory: True
+---
+question: |
+ RELOCATION OF A PARENT & PARENT-CHILD COMMUNICATION: 
+subquestion: |
+ Neither parent is allowed relocate outside his/her immediate vicinity without the prior permission of the other parent or an order of the court. You should come up with a plan as to the logistics of Parent Child Communication.
+
+fields:
+ - If you have some agreement as to the relocation of a parent outside his/her immediate vicinity insert it here: relocationdetails
+   input type: area
+   required: False
+ -  note: Choose One
+ - What have the parties decided as to Custody: parentcommunication
+   choices:
+   - Both parents and  children shall have  the right to communicate by telephone, in writing or by e-mail during reasonable hours without interference or monitoring by the other parent.
+   - Procedures for telephone, written or e-mail access will be as follows
+ -  note: Set forth procedures for parental access
+ -  Procedures for telephone, written or e-mail access will be as follows: communicationprocedures
+    input type: area
+    required: False
+under: |
+  As to Information Sharing, the Plan will state that unless there is a court order stating otherwise:
+  Both parents are entitled to important information regarding our child[ren] including but not limited to, our child[ren]’s current  address and telephone number, education, medical, governmental agency, psychological and law enforcement records.
+  Information about  our child[ren]’s progress in school and any school activity is equally available to both parents.  Both parents are encouraged to consult  with school  staff concerning our child[ren]’s welfare and education.
+  Both parents will immediately notify each other regarding any emergency circumstances or substantial changes in the health of our child[ren].
+  Both parents will provide each other with contact numbers and addresses and  will notify each other  of any change in that information within 72 hours  of such a change.  If either parent takes our child[ren] from their usual place  of residence, they will provide the other parent with an emergency contact phone number.
+
+mandatory: True
+---
+question: |
+ EXCHANGE OF CHILDREN & Mutual Respect
+subquestion: |
+ Both parents shall have the children ready on time with sufficient clothing packed and ready at the agreed-upon time of the exchange.
+ All clothing that accompanied the children shall be returned to the other parent.
+
+fields:
+ - As to the Exchange of the Children between the Parents: exchangechildren
+   choices:
+   - Both parents will share equally in the responsibility of exchanging our children from one parent to the other while parents continue to reside in the same locale.
+   - Procedures for exchanging our children shall be as follows
+ -  note: Explain the Details
+ - What have the parties decided as to Custody: exchangedetails
+   input type: area
+   required: False
+mandatory: True
+---
+question: |
+ OTHER TERMS:
+subquestion: |
+ Please add any other terms you feel should go into your Parenting Plan that were not covered.
+fields:
+  -  Other Terms: otherterms
+     input type: area
+     required: False
+mandatory: True
+---
+question: |
+  Here is your Parenting Plan. Please download it right away. Do not leave this page or press back or any other button until you have.
+subquestion: |
+  The email functionality is provided as a courtesy. However, it may not work for you. Download this document because once you leave this page, your work will be lost forever and you will have to start all over again.
+  
+  Nothing herein is meant to constitute legal advice or to create an attorney client privilege.
+  
+  The Court system provides a free pdf version of a [Parenting Plan](https://www.nycourts.gov/forms/matrimonial/ParentingPlanForm.pdf) on its site.
+  
+attachment:
+  name: New York Parenting Plan
+  filename: NYParentingPlan
+  docx template file: Parenting_Plan_NY_NoSig.docx
+  valid formats:
+    - pdf
+    - docx
+mandatory: True

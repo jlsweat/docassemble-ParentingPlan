@@ -1,0 +1,1 @@
+NY Parenting Plan No Signature. This is a New York Parenting Plan with no signature functionality due to the fact that signatures are required to be done in front of a Notary Public. This version fixes a typo in the download section.
